@@ -36,6 +36,7 @@ let s:da_col = ['#00d787',  42]
 let s:dc_col = ['#87afff', 111]
 let s:dd_col = ['#ff5faf', 205]
 let s:sp_col = ['#ff5faf', 205]
+let s:sc_col = ['#ffaf5f', 215]
 let s:sl_col = ['#000000',  16]
 let s:none   = ['NONE', 'NONE']
 
@@ -82,8 +83,9 @@ call s:hl('CursorLineNr',    s:hl_col, s:none,   'BOLD')
 " Visual
 call s:hl('Visual',          s:sl_col, s:sp_col, 'NONE')
 call s:hl('VisualNOS',       s:sl_col, s:sp_col, 'NONE')
-call s:hl('Search',          s:sl_col, s:sp_col, 'NONE')
-call s:hl('IncSearch',       s:sl_col, s:sp_col, 'NONE')
+call s:hl('Search',          s:sl_col, s:sc_col, 'NONE')
+call s:hl('IncSearch',       s:sl_col, s:sc_col, 'NONE')
+call s:hl('CurSearch',       s:sl_col, s:sc_col, 'NONE')
 
 " Messages
 call s:hl('WarningMsg',      s:hl_col, s:none,   'BOLD')
